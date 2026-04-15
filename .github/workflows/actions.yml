@@ -27,12 +27,12 @@ jobs:
 
       - name: login to aws ecr
         # uses: aws-actions/amazon-ecr-login@v2
-        run: echo "Logged in to ECR" >> $GITHUB_OUTPUT
+        run: echo "Logged in to ECR"
 
       - name: build image
         run: |
           docker build -t app:latest .
-          echo "Image pushed to ECR_REGISTRY" >> $GITHUB_OUTPUT
+          echo "Image pushed to ECR_REGISTRY"
 
       - name: deploy to aws ecs
-        run: echo "Deployed to ECS_SERVICE" >> $GITHUB_OUTPUT
+        run: echo "Deployed to ECS_SERVICE"
