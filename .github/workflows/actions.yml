@@ -1,4 +1,4 @@
-name: run apply.py
+name: CI/CD Demo using Github Actions
 
 on:
   push:
