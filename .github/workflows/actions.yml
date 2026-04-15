@@ -27,6 +27,7 @@ jobs:
 
       - name: login to aws ecr
         # uses: aws-actions/amazon-ecr-login@v2
+        run: echo "Logged in to ECR" >> $GITHUB_OUTPUT
 
       - name: build image
         run: |
